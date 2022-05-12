@@ -42,11 +42,20 @@ let addChar = `${lastThreeChars}${scritcherStr}${lastThreeChars}`;
 console.log(`7. ${addChar}`);
 /* 8. Create a variable named `boogieNightsStr` and assign a word of your choice with at least 2 characters as its value. Switch the places of the first and last charecters and print the result to the console, expected output: BoogieWoogie => eoogieWoogiB */
 
-let boogieNightsStr = "JavaScript";
+/* let boogieNightsStr = "JavaScript";
 let firstChar = boogieNightsStr.substring(0, 1);
 let lastChar = boogieNightsStr.substring(9);
 
-console.log(`8. ${lastChar}avaScrip${firstChar}`);
+console.log(`8. ${lastChar}avaScrip${firstChar}`); */
+
+let boogieNightsStr = "JavaScript";
+
+let firstChar = boogieNightsStr.charAt(0);
+let lastLetter = boogieNightsStr.charAt(boogieNightsStr.length - 1);
+let middleLetters = boogieNightsStr.substring(1, boogieNightsStr.length - 1);
+console.log(`8. ${lastLetter}${middleLetters}${firstChar}`);
+
+/* console.log(`${lastLetter}${boogieNightsStr.substring(1, length-1)${firstChar}}`); */
 
 /* 9. Create 3 variables named `firstName`, `city` and `job` and assign string values, i.e, const firstName = "Maria"; const city = "Berlin", etc. Print a sentence to the console using the variables and string interpolation, i.e., "My name is Maria. I live in Berlin and I am a teacher".  */
 
